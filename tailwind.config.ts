@@ -1,11 +1,11 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  darkMode: 'class',
+  darkMode: "class",
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -16,25 +16,25 @@ const config: Config = {
       typography: {
         DEFAULT: {
           css: {
-            maxWidth: '65ch',
-            color: 'inherit',
+            maxWidth: "65ch",
+            color: "inherit",
             a: {
-              color: '#3b82f6',
-              '&:hover': {
-                color: '#2563eb',
+              color: "#3b82f6",
+              "&:hover": {
+                color: "#2563eb",
               },
             },
             code: {
-              color: '#e11d48',
-              backgroundColor: '#f1f5f9',
-              padding: '0.25rem 0.375rem',
-              borderRadius: '0.25rem',
-              fontWeight: '600',
+              color: "#e11d48",
+              backgroundColor: "#f1f5f9",
+              padding: "0.25rem 0.375rem",
+              borderRadius: "0.25rem",
+              fontWeight: "600",
             },
-            'code::before': {
+            "code::before": {
               content: '""',
             },
-            'code::after': {
+            "code::after": {
               content: '""',
             },
           },
@@ -42,9 +42,7 @@ const config: Config = {
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
+  plugins: [require("@tailwindcss/typography")],
 };
 
 export default config;
