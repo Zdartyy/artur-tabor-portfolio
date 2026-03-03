@@ -1,10 +1,17 @@
 export interface ProjectFrontmatter {
   title: string;
-  description: string;
+  subtitle?: string;
+  description?: string;
   date: string;
   tags: string[];
-  image: string;
+  image?: string;
   github?: string;
   demo?: string;
-  featured: boolean;
+  featured?: boolean;
+}
+
+export interface Project {
+  slug: string;
+  frontmatter: ProjectFrontmatter;
+  content: string;
 }
